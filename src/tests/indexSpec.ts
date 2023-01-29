@@ -9,7 +9,7 @@ it('should get basic data on the country canada', async () => {
   });
 });
 
-it('should get the region countries of the Americas', async () => {
+it('should get the region countries of North Americas', async () => {
   const data = await countries.getRegionCountries('North America');
   expect(data).toEqual([
     'Canada',
@@ -22,7 +22,7 @@ it('should get the region countries of the Americas', async () => {
   ]);
 });
 
-it('should get capitals of NAFTA countries', async () => {
+it('should get capitals of Central America countries', async () => {
   const data = await countries.getRegionCapitals('Central America');
   expect(data).toEqual([
     'San Salvador',
