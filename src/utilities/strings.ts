@@ -3,6 +3,7 @@ const concat = (str1: string, str2: string) => {
 };
 
 const capitalize = (str: string) => {
+  if (str.trim().length === 0) return str;
   const newStr = str
     .split(' ')
     .map((word) => word[0].toUpperCase() + word.substring(1))
