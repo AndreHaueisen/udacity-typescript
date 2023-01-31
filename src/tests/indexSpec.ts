@@ -12,25 +12,25 @@ it('should get basic data on the country canada', async () => {
 it('should get the region countries of North Americas', async () => {
   const data = await countries.getRegionCountries('North America');
   expect(data).toEqual([
-    'Canada',
-    'Bermuda',
-    'United States',
     'Mexico',
     'United States Minor Outlying Islands',
-    'Greenland',
-    'Saint Pierre and Miquelon'
+    'Bermuda',
+    'Canada',
+    'Saint Pierre and Miquelon',
+    'United States',
+    'Greenland'
   ]);
 });
 
 it('should get capitals of Central America countries', async () => {
   const data = await countries.getRegionCapitals('Central America');
   expect(data).toEqual([
-    'San Salvador',
-    'Panama City',
-    'Guatemala City',
-    'San José',
     'Belmopan',
+    'San Salvador',
+    'Managua',
+    'Panama City',
+    'San José',
     'Tegucigalpa',
-    'Managua'
+    'Guatemala City'
   ]);
 });

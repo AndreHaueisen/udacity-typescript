@@ -1,6 +1,6 @@
 import { strings } from '../../utilities/strings';
 
-describe('Captillize', () => {
+describe('captillize', () => {
   it('expects "the quick brown fox" to equal "The Quick Brown Fox"', () => {
     expect(strings.capitalize('the quick brown fox')).toEqual(
       'The Quick Brown Fox'
@@ -23,5 +23,12 @@ describe('Captillize', () => {
 
     const result2 = strings.capitalize(' ');
     expect(result2).toEqual(' ');
+  });
+
+  it('should capitalize a string', () => {
+    expect(strings.capitalize('a sentence')).toEqual('A Sentence');
+  });
+  it('should allow sentence to remain capitalized', () => {
+    expect(strings.capitalize('A Sentence')).toEqual('A Sentence');
   });
 });
